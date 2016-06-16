@@ -1,0 +1,472 @@
+/*
+ * Theme Name: Quatro Rodas
+ * Author: Thiago Castilho
+ * Author URI: http://thiagocastilho.com.br
+ * Version: 1.0
+ * Description: Tema criado para o teste da Altran para a Abril, tendo como tema o topo da página principal do site Quatro Rodas
+ */
+
+/**
+ * =============================================================================
+ * ===== DEAFULT STYLE =====
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+header,
+main {
+  width: 100%;
+}
+ul,p {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.block-center {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.banner {
+  width: 300px;
+  height: 50px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: #000;
+}
+.hidden {
+  display: none !important;
+}
+
+/**
+ * =============================================================================
+ * ----- AREA DE BUSCA -----
+ */
+div.search {
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+div.search a.search {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-image: url('images/bt-busca-white.png');
+  background-repeat: no-repeat;
+  background-position: 20px 21px;
+}
+div.search a.search.opened {
+  background-color: #d41f1f;
+}
+div.search form.form-control {
+  width: 300px;
+  height: 44px;
+  position: absolute;
+  top: 55px;
+  left: -300px;
+  background-color: #d41f1f;
+}
+div.search form.form-control input[type="text"] {
+  width: 280px;
+  height: 24px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+}
+div.search form.form-control input[type="submit"] {
+  display: none;
+}
+
+/**
+ * =============================================================================
+ * ----- AREA DO LOGO -----
+ */
+div.logo {
+  width: 150px;
+  margin-top: 12px;
+  margin-right: 20px;
+  margin-left: 50px;
+  float: left;
+}
+div.logo img {
+  width: 100%;
+  display: block;
+}
+
+/**
+ * =============================================================================
+ * ----- AREA DE MENU PRINCIPAL -----
+ */
+header {
+  
+}
+header .main {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  background-color: #ed1c24;
+}
+header .main .main-menu a.mobile-menu {
+  width: 55px;
+  height: 55px;
+  float: right;
+  text-decoration: none;
+}
+header .main .main-menu a.mobile-menu .closed {
+  /*display: block;*/
+  display: none;
+  padding-top: 18px;
+  padding-left: 17px;
+}
+header .main .main-menu a.mobile-menu .closed span {
+  width: 20px;
+  height: 4px;
+  display: block;
+  margin-bottom: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+header .main .main-menu a.mobile-menu .opened {
+  width: 55px;
+  height: 55px;
+  padding-top: 13px;
+  /*display: none;*/
+  display: block;
+  color: #fff;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  background-color: #d41f1f;
+}
+header .main .main-menu a.mobile-menu.close .closed {
+  display: block;
+}
+header .main .main-menu a.mobile-menu.open .closed {
+  display: none;
+}
+header .main .main-menu a.mobile-menu.close .opened {
+  display: none;
+}
+header .main .main-menu a.mobile-menu.open .opened {
+  display: block;
+}
+header .main .main-menu a.mobile-menu.close+ul.menu {
+  display: none;
+}
+header .main .main-menu a.mobile-menu.open+ul.menu {
+  display: block;
+}
+header .main .main-menu ul.menu {
+  width: 100%;
+  top: 55px;
+  position: absolute;
+  background-color: #d41f1f;
+}
+header .main .main-menu .main-menu-li {
+  border-bottom: 1px solid #c21c1c;
+}
+header .main .main-menu .main-link {
+  padding-left: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial;
+  line-height: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .main nav.submenu {
+  display: none;
+}
+
+/**
+ * =============================================================================
+ * ----- AREA DE SEGUNDO MENU -----
+ */
+header .second-menu {
+  width: 100%;
+  height: 28px;
+  display: none;
+  background-color: #000;
+}
+header .second-menu .bg-arrow {
+  width: 140px;
+  height: 28px;
+  float: left;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url('images/bg-mais-acessados.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+header .second-menu .bg-arrow p {
+  line-height: 28px;
+}
+header .second-menu ul,
+header .second-menu ul li {
+  float: left;
+}
+header .second-menu ul li {
+  padding: 0 15px;
+}
+header .second-menu ul li a {
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/**
+ * =============================================================================
+ * ----- AREA DE CONTEUDO -----
+ */
+.content {
+  width: 100%;
+  height: 676px;
+  display: block;
+  background-image: url('images/content-small.jpg');
+}
+
+/**
+ * =============================================================================
+ * ===== Extra small devices (phones, less than 768px) =====
+ * ===== No media query since this is the default in Bootstrap =====
+ */
+
+/**
+ * =============================================================================
+ * ----- Small devices (tablets, 768px and up) -----
+ */
+@media screen and (min-width: 768px) {
+  .banner {
+    width: 730px;
+    height: 90px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+/**
+ * =============================================================================
+ * ----- Medium devices (desktops, 992px and up) -----
+ */
+@media screen and (min-width: 992px) {
+  header .main,
+  header .second-menu,
+  main {
+    width: 1320px;
+  }
+  header {
+    width: 100%;
+    position: fixed;
+    top: 114px;
+  }
+  .fixed-banner {
+    width: 100%;
+    height: 114px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #e6e6e6;
+  }
+  header .main {
+    height: 80px;
+    position: relative;
+  }
+  header .main div.search {
+    width: auto;
+    height: auto;
+    margin-top: 24px;
+    margin-right: 50px;
+    margin-left: auto;
+    float: right;
+  }
+  header .main div.search a.search {
+    display: none;
+  }
+  header .main div.search form  {
+    width: 130px;
+    height: inherit;
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: transparent
+  }
+  header .main div.search form input[type="text"] {
+    width: 130px;
+    height: 32px;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 5px;
+    line-height: 32px;
+    border: none;
+  }
+  header .main div.search form input[type="submit"] {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    line-height: 50;
+    border: none;
+    background-color: transparent;
+    background-image: url('images/bt-busca.png');
+  }
+
+  header .main .logo {
+    width: 187px;
+    height: 43px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+
+  header .main .main-menu {
+    float: right;
+    margin-right: 30px;
+  }
+  header .main .main-menu a.mobile-menu {
+    display: none;
+  }
+  header .main .main-menu a.mobile-menu.close+ul.menu {
+    display: block;
+  }
+  header .main .main-menu ul.menu {
+    position: inherit;
+    top: 0;
+    background-color: transparent;
+  }
+  header .main .main-menu .main-menu-li {
+    display: inline-block;
+    border-bottom: none;
+  }
+  header .main .main-menu .main-menu-li:hover {
+    background-color: #242424;
+  }
+  header .main .main-menu .main-menu-li .main-link {
+    padding: 0 20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  header .main .main-menu .main-menu-li .main-link:hover {
+    background-color: #242424;
+  }
+  header .main .main-menu .main-menu-li nav.submenu {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+    border-bottom: 2px solid #ed1c24;
+    background-color: #242424;
+  }
+  header .main .main-menu .main-menu-li:hover nav.submenu {
+    display: block;
+  }
+  header .main .main-menu .main-menu-li nav.submenu a {
+    color: #fff;
+    font-family: Arial;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  header .main .main-menu .main-menu-li nav.submenu .left {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    float: left;
+  }
+  header .main .main-menu .main-menu-li nav.submenu .left a {
+    width: 100%;
+    height: 33px;
+    display: block;
+    line-height: 33px;
+    text-align: center;
+    background-color: #474747;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .left {
+    background-color: #474747;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .left a {
+    padding-right: 15px;
+    text-align: right;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .left li:first-child a {
+    margin-top: 15px;
+    background-color: #242424;
+  }
+
+  header .main .main-menu .main-menu-li nav.submenu .right {
+    padding: 10px;
+    float: right;
+  }
+  header .main .main-menu .main-menu-li nav.submenu .right .car-list {
+    width: 1050px;
+    padding-left: 15px;
+  }
+  header .main .main-menu .main-menu-li nav.submenu .right .car-list li {
+    width: 200px;
+    display: inline-block;
+    margin: 10px 0 20px;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .right li {
+    width: 200px;
+    float: left;
+    margin-left: 15px;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .right li h2 {
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 400;
+  }
+  header .main .main-menu .main-menu-li nav.submenu.testes-list .right li p {
+    color: #ed1c24;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: 400;
+  }
+
+  header .second-menu {
+    display: block;
+  }
+  .content {
+    height: 874px;
+    margin-top: 184px;
+    background-image: url('images/content.jpg');
+  }
+}
